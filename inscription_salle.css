@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');  
+*
+{
+   padding:0px;
+   margin:0px;
+   box-sizing: border-box;
+}
+.icon
+{
+   color: aliceblue;
+   padding-bottom: 10px;
+   transform: translateX(+400px);
+}
+.icon:first-child.visible3
+{
+   animation: animate3 ease-in-out 1s forwards;
+   animation-delay: 0s;
+}
+.icon:nth-child(2).visible3
+{
+   animation: animate3 ease-in-out 1s forwards;
+   animation-delay: 0.1s;
+
+}.icon:nth-child(3).visible3
+{
+   animation: animate3 ease-in-out 1s forwards;
+   animation-delay: 0.2s;
+
+}.icon:nth-child(4).visible3
+{
+   animation: animate3 ease-in-out 1s forwards;
+   animation-delay: 0.3s;
+
+}
+
+@keyframes animate3
+
+{
+   0%{ transform: translateX(+400px);    opacity:0;}
+   100%{ transform: translateX(0);    opacity:1;}
+
+}
+
+.icon_color:hover
+{
+   color:#006d77;
+   transition: all 0.7s ;
+   cursor:pointer;
+}
+
+.container2.visible2
+{
+   display:block;
+}
+
+body
+{
+   height: 100vh;
+   width:100%;
+   background: url("images/background.jpg") center center no-repeat;
+   background-size: cover;
+   color: aliceblue;
+
+}
+.wrapper
+{
+   background-color: rgba(0,0,0,0.7);
+   width:100%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+#container
+{
+   position:absolute;
+   background: rgba(0,0,0,0.7);
+   width:390px;
+   height:95vh;
+   transform: translateX(-20%);
+   overflow: hidden;
+   border-radius: 10px;
+   border-top:  2px solid #adb5bd;
+   border-bottom:2px solid #adb5bd ;
+}
+.container2:hover,
+#container:hover
+{
+   box-shadow: 0px 0px 20px 4px rgba(206, 212, 218,0.3);
+   object-fit: cover;
+   transition: alle ease-in-out 0.5s ;
+}
+.visible4
+{
+   animation: animate4 ease-in-out 1s forwards;
+}
+.inscription_div
+{
+   position: absolute;
+   top:10px;
+   left:50%;
+   text-align: center;
+   width: 300px;
+   transform: translateX(-50%);
+   
+}
+.inscription
+{
+ font-size:35px ;
+ font-family: Arial, Helvetica, sans-serif;
+ text-transform: uppercase;
+ color:#94f7e6;
+}
+
+/*key frame por le container*/
+@keyframes animate4
+{
+   0%{opacity: 0;}
+   100%{opacity:1}
+}
+.nom_prenom
+{
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   top:22%;
+   width:100%;
+   left:5px;
+   font-family:'Yatra One',cursive,sans-serif ;
+
+}
+.nom_div
+{
+   position: absolute;
+   width:48%;
+   left:2px;
+   border-bottom:2px solid #adb5bd ;
+
+
+}
+
+.prenom_div
+{
+   position: absolute;
+   width:40%;
+   right:10px;
+
+   border-bottom:2px solid #adb5bd ;
+}
+
+.salle
+{
+   position: relative;
+display: block; 
+width:100%; 
+outline: none;
+background-color: transparent;
+height: 20px;
+border: none;
+color: #94f7e6;;
+font-size: 15px;
+}
+
+.date_naissance_div
+{
+   position: absolute;
+   top:33%;
+   width:97%;
+   left:5px;
+border-bottom:2px solid #adb5bd ;
+font-family:'Yatra One',cursive,sans-serif ;
+
+
+}
+
+
+.numero_telephone_div
+{position: absolute;
+   top:44%;
+   width:97%;
+   left:5px;
+border-bottom:2px solid #adb5bd ;
+font-family:'Yatra One',cursive,sans-serif ;
+
+}
+
+.etat_de_santé_div
+{
+   position: absolute;
+   top:55%;
+   width:97%;
+   left:5px;
+border-bottom:2px solid #adb5bd ;
+font-family:'Yatra One',cursive,sans-serif ;
+
+
+}
+
+.activité
+{
+   background-color:#94f7e6;
+outline: none;
+
+border: 2px solid  #94f7e6;
+
+}
+
+.choix_activité_div
+{
+   position: absolute;
+   top:67%;
+   width:97%;
+   left:5px;
+border-bottom:2px solid #adb5bd ;
+}
+
+
+
+.les_horaires_div
+{
+   position: absolute;
+   bottom: 13%;
+   width:97%;
+   left:5px;
+border-bottom:2px solid #adb5bd ;
+}
+.button1
+{
+   position: absolute;
+   bottom:3%;
+   display: flex; 
+   flex-direction: row;
+   justify-content: center;
+   width:80%;
+   transform: translateX(+10%);
+   
+
+}
+.button2
+{
+   padding:5px 15px;
+   font-size: 18px;
+   width:130px;
+   background-color: transparent;
+   color: #94f7e6;
+   border-top: 2px solid #94f7e6;
+   border-bottom: 2px solid #94f7e6;
+   cursor: pointer;
+   font-family:'Yatra One',cursive,sans-serif ;
+
+
+
+    
+}
+.button2:first-child
+{
+   border-top-left-radius: 25% ;
+   border-bottom-left-radius: 25% ;
+
+
+}
+.button2:nth-child(2)
+{
+   border-top-right-radius: 25% ;
+   border-bottom-right-radius: 25% ;
+
+   
+}
+
+.button2 span
+{
+    
+}
+.button2:hover
+{
+   
+   border-color: hsl(185, 100%, 23%);
+   transform: scale(1.05);
+   transition: border-color 1s ease-in-out ;
+}
+
+.label
+{position: relative;
+   top:-4px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family:'Yatra One',cursive,sans-serif ;
+
+  /*background-color: #006d77;*/
+}
+.input
+{
+background-color: transparent;
+outline: none;
+color:#94f7e6;
+border:none;
+width:90%;
+cursor:pointer;
+height:20px;
+font-size:15px ;
+}
+.nom_div2:hover,
+.prenom_div2:hover,
+.date_expiration_div2:hover,
+.numer_de_carte_div:hover,
+.cvc_div:hover,
+.date_naissance_div:hover,
+.numero_telephone_div:hover,
+.etat_de_santé_div :hover,
+.choix_activité_div:hover,
+.les_horaires_div:hover,
+.prenom_div:hover,
+.nom_div:hover
+{
+ transform: scale(1.03);
+ border-bottom: 2px solid #94f7e6;
+}
+
+
+
+/*-------------------conitainer2-----------------*/
+.container2
+{
+   position:absolute;
+   right: 200px;
+   bottom:20px;
+   background: rgba(0,0,0,0.7);
+   width:300px;
+   height:60vh;
+   overflow: hidden;
+   border-radius: 10px;
+   border-top:  2px solid #adb5bd;
+   border-bottom:2px solid #adb5bd ;
+   display: none;
+}
+.nom_prenom2
+{
+
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   top:15%;
+   width:100%;
+   left:5px;
+}
+.nom_div2
+{
+   position: absolute;
+   width:48%;
+   left:2px;
+   border-bottom:2px solid #adb5bd ;
+
+}
+.prenom_div2
+{
+   position: absolute;
+   width:40%;
+   right:10px;
+
+   border-bottom:2px solid #adb5bd ;
+}
+.date_expiration_div2
+{
+   position: absolute;
+   top:33%;
+   width:97%;
+   left:5px;
+border-bottom:2px solid #adb5bd ;
+
+}
+.numer_de_carte_div
+{
+   position: absolute;
+   top:50%;
+   width:97%;
+   left:5px;
+border-bottom:2px solid #adb5bd ;
+
+}
+.cvc_div
+{
+   position: absolute;
+   top:67%;
+   width:97%;
+   left:5px;
+border-bottom:2px solid #adb5bd ;
+
+}
+.button3
+{
+
+   position: absolute;
+   left:50%;
+   bottom:3%;
+   transform: translateX(-50%);
+   width:50%;
+   text-align: center;
+}
+.button3 button
+{
+   padding:5px 12px;
+   font-size: 18px;
+   width:130px;
+   background-color: transparent;
+   color: #94f7e6;
+   border: 2px solid #94f7e6 ;
+   border-radius: 10%;
+   cursor: pointer;
+   font-family:'Yatra One',cursive,sans-serif ;
+
+}
+.button3 button:hover
+{
+   transform: scale(1.1);
+   border-color: #006d77;
+   transition: border-color transform 1s ease-in-out ;
+   box-shadow: 0 0 7px 0px #94f7e6;
+}
+
+
+
+/*--------------medias queries--------------*/
+
+@media screen and (max-width:1235px) {
+   #container
+   {
+     transform: translateX(-25%);
+   }
+   
+}
+@media screen and (max-width:1200px) {
+   #container
+   {
+     transform: translateX(-30%);
+   }
+   
+}
+@media screen and (max-width:1160px) {
+   #container
+   {
+     transform: translateX(-35%);
+   }
+   
+}
+@media screen and (max-width:1130px) {
+   #container
+   {
+     transform: translateX(-40%);
+   }
+   
+}
+@media screen and (max-width:1084px) {
+   #container
+   {
+     transform: translateX(-45%);
+   }
+   
+}
+@media screen and (max-width:1042px) {
+   #container
+   {
+     transform: translateX(-50%);
+   }
+}
+@media screen and (max-width:1000px) {
+   #container
+   {
+     transform: translateX(-45%);
+   }
+   .container2
+   {
+     transform: translateX(10%);
+
+   }
+}
+
+
+@media screen and (max-width:980px) {
+   #container
+   {
+     transform: translateX(-40%);
+   }
+   .container2
+   {
+     transform: translateX(20%);
+
+   }
+}
+@media screen and (max-width:960px) {
+   #container
+   {
+     transform: translateX(-35%);
+   }
+   .container2
+   {
+     transform: translateX(30%);
+
+   }
+}
+@media screen and (max-width:937px) {
+   #container
+   { 
+      width:350px;
+      height:90vh;
+   }
+   .container2
+   {
+      width:260px;
+      height:55vh;
+
+   }
+   .label
+   {
+      font-size: 15px;
+   }
+   .inscription
+   {
+      position: relative;
+      font-size:25px ;
+      margin-bottom: auto;
+   }
+   .button3 button
+   {
+      padding:3px 10px;
+   font-size: 15px;
+   width:100px;
+   }
+   }
+
+@media screen and (max-width:860px)
+ 
+{
+   body
+   {
+      margin: 0px;
+      padding:0px;
+     
+   }
+   .wrapper
+   {
+    
+      height:auto ;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+   #container
+   {
+      position: relative;
+      top:40px;
+      margin:auto;
+
+   }
+   .container2
+   {
+      position: relative;
+      transform: translateX(100%);
+      margin-top: 20px;
+      margin: auto;
+
+
+   }
+ 
+}
+
+   
+   
+
+
+
+
+
+
+
+
+

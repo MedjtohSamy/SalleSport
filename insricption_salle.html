@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription salle</title>
+    <link rel="stylesheet" href="inscription_salle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="inscription_salle.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="icon2" style="position:absolute;left:50px;top:40px;font-size:30px;color: aliceblue;"><i class="fa-solid fa-house icon_color"></i></div>
+    <div class="icon2" style="position:absolute;right:50px;top:40px;font-size:50px;color: aliceblue;"><i class="fa-solid fa-medal"></i></div>
+    <div  class="reseaux"style="position:fixed;right:40px;bottom:20px;font-size:32px; display: flex; flex-direction: column;align-items:spacebetween;">
+        <a class="icon" style="color: aliceblue;"   href="#"><i class="fa-brands fa-facebook icon_color"></i></a> 
+        <a class="icon" style="color: aliceblue;"  href="#"><i class="fa-brands fa-instagram icon_color"></i></a>
+        <a class="icon"  style="color: aliceblue;"  href="#"><i class="fa-brands fa-twitter icon_color"></i></a>
+        <a class="icon" style="color: aliceblue;"  href="#"><i class="fa-brands fa-whatsapp icon_color"></i></a>
+        
+      </div>
+    <section id="container">
+
+        <div class="inscription_div">
+            <p class="inscription">inscription salle de sport</p>
+        </div>
+        <section class="nom_prenom">
+        <div class="nom_div">
+            <label for="#nom"><span class="label">nom</span></label>
+            <input class="input salle"  type="text" placeholder="@Nom ">
+        </div>
+         
+        <div class="prenom_div">
+            <label for="#prenom"><span class="label">prenom</span></label>
+            <input  class="input salle"  type="text" placeholder="@Prenom ">
+        </div> 
+      </section>
+        <div class="date_naissance_div">
+            <label for="#date_naissance"><span class="label">date de naissance</span></label>
+            <input  class="input salle"  type="date" placeholder="@date de naissance">
+        </div>
+        <div class="numero_telephone_div">
+            <label for="#numero_telephone"><span class="label">numero de telephone</span></label>
+            <input  class="input salle"  type="tel" placeholder="@numero de telephone" >
+            
+        </div>
+        <div class="etat_de_santé_div" >
+            <label for="#etat_de_santé"><span class="label" >Etat de santé</span></label>
+            <select name="etat de sante"class="salle">
+              <option value="excelente" class="activité"><span>excelente</span></option>
+              <option  value="malade"  class="activité "><span>malade</span></option>
+         
+            </select>
+        </div> 
+
+        <div class="choix_activité_div" >
+            <label for="#choix_activité"><span class="label">choix de l'activité</span></label>
+            <select name="choix_activité" class="salle">
+              <option value="musculation"class="activité"><span   >musculation</span></option>
+              <option value="cross traning" class="activité"><span>cross traning</span></option>
+              <option value="cardio training" class="activité"><span >cardio training</span></option>
+            </select>
+        </div>
+        <div class="les_horaires_div" >
+            <label for="#les_horaires"><span class="label">choix des horaires</span></label>
+            <select name="les horaires" class="salle">
+              <option value="deux fois " class="activité"><span >deux fois par semaine</span></option>
+              <option value="tois fois" class="activité"><span >trois fois par semaine</span></option>
+              <option value="quatres fois" class="activité"><span>quatres fois par semaine </span></option>
+            </select>
+        </div>
+    <section class="button1">
+        <button class="button2"><span >annuler</span></button>
+        <button class="button2 payer"><span>payer</span></button>
+    </section>
+</section>
+<section class="container2">
+    <div class="inscription_div">
+        <p class="inscription">payement</p>
+    </div>
+    <section class="nom_prenom2">
+        <div class="nom_div2">
+            <label for="#nom2"><span class="label">nom</span></label>
+            <input class="input salle" id="nom2" type="text" placeholder="@Nom ">
+        </div>
+         
+        <div class="prenom_div2">
+            <label for="#prenom2"><span class="label">prenom</span></label>
+            <input id="prenom2" class="input salle"  type="text" placeholder="@Prenom ">
+        </div> 
+      </section>
+      <div class="date_expiration_div2">
+        <label for="#date_expiration"><span class="label">date </span></label>
+        <input class="salle input" id="date_expiration"  type="date" placeholder="@date d'expiration">
+    </div>
+    <div class="numer_de_carte_div">
+        <label for="#numero_de_carte"><span class="label">numero de carte</span></label>
+        <input class="salle input" id="numer_de_carte"   type="tel" placeholder="@numero de carte" >
+        
+    </div>
+    <div class="cvc_div">
+        <label for="#CVC"><span class="label">CVC</span></label>
+        <input class="salle input" id="CVC"  type="tel" placeholder="@CVC" >
+        
+    </div>
+    
+    <div class="button3">
+        <button >
+             <span>valider</span>
+        </button>
+    </div>
+
+
+
+
+
+
+
+</section>
+
+</div>
+</body>
+</html>

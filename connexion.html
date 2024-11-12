@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connexion</title>
+    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="connexion.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+    <p  class='fleche visible2' style="position:absolute;left:0px;top:30vh;font-size:30px;color: aliceblue;"><i class="fa-solid fa-angle-up fa-rotate-90  icon_color"></i></p>
+    <p class=" fleche2 cacher2" style="position:absolute;left:0px;top:30vh;font-size:30px;color: aliceblue;"><i class="fa-solid fa-angle-up fa-rotate-270  icon_color"></i></p>
+    <div class="icon2" style="position:absolute;left:50px;top:40px;font-size:30px;color: aliceblue;"><i class="fa-solid fa-house icon_color"></i></div>>
+    <div class="icon2" style="position:absolute;right:50px;top:40px;font-size:50px;color: aliceblue;"><i class="fa-solid fa-medal"></i></div>
+    <div style="position:absolute;right:40px;bottom:20px;font-size:32px; display: flex; flex-direction: column;align-items:spacebetween;">
+        <a class="icon" style="color: aliceblue;"   href="#"><i class="fa-brands fa-facebook icon_color"></i></a> 
+        <a class="icon" style="color: aliceblue;"  href="#"><i class="fa-brands fa-instagram icon_color"></i></a>
+        <a class="icon"  style="color: aliceblue;"  href="#"><i class="fa-brands fa-twitter icon_color"></i></a>
+        <a class="icon" style="color: aliceblue;"  href="#"><i class="fa-brands fa-whatsapp icon_color"></i></a>
+        
+      </div>
+    <section id="container">
+
+        <div class="connexion_div">
+            <p class="connexion">connexion</p>
+        </div>
+        
+        <div class="email_div">
+            <input id="email" class="input"  type="email" placeholder="@nom utilisateur">
+            <i class="fa-solid fa-envelope envellope"></i>
+        </div>
+        
+        <div class="password_div">
+            <input id="mot_de_passe" class="input"  type="password" placeholder="@mot de passe" >
+            <i   class="fa-solid fa-lock lock"></i>
+            
+        </div>
+        <div class="checkbox_div">
+            <input class="checkbox" type="checkbox" checked> <p class="enregistrer">enregistrer le compte</p> 
+        </div>
+        <div class="se_connecter_div">
+            <button class="se_connecter fleche">se connecter</button>
+        </div >
+        <a class="pas_compte" href="">
+            <h4 class="compte">j'ai pas de compte</h4>
+        </a>
+
+    </section>
+    <div class="slider cacher">
+        <ul>
+            <li> <span><span><i class="fa-solid fa-house-chimney"></i></span></span><a href="#">accueil</a></li>
+            <li><span><i class="fa-solid fa-heart"></i></span><a href="#">abonnement</a></li>
+            <li><span><i class="fa-solid fa-heart"></i></span><a href="#">équipement</a></li>
+            <li><span><i class="fa-sharp fa-solid fa-medal"></i></span><a href="#">coatching</a></li>
+            <li><span><i class="fa-sharp fa-solid fa-dumbbell"></i></span><a href="#">activitées</a></li>
+            <li><span><i class="fa-solid fa-address-book"></i></span><a href="#">contact</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
